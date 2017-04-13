@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>inl4</title>
+</head>
+<body>
+<h1>Lägg till produkt och sortera</h1>
+<input id="prod-name" type="text" >
+<input id="prod-price" type="number" >
+<button id="add-prod">Lägg till Produkt</button>
+<br>
+<h2>Produkt lista</h2>
+<div>
+    <h4>Sortera efter</h4>
+
+    <button id="sort-name">a-ö</button>
+    <button id="sort-price">pris</button>
+
+    <p>
+        Antal resultat: <input id="show-amount"/>
+    </p>
+    <ul id="prod-ul">
+        <li><span>Produktnamn</span> <span>Pris i kr</span></li>
+
+    </ul>
+
+</div>
+
+
+<script src="https://www.gstatic.com/firebasejs/3.7.5/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyABom8qVq7n_4_bRwogfGpvnnOCX_oYF3c",
+        authDomain: "sort-firebase-a55c6.firebaseapp.com",
+        databaseURL: "https://sort-firebase-a55c6.firebaseio.com",
+        projectId: "sort-firebase-a55c6",
+        storageBucket: "sort-firebase-a55c6.appspot.com",
+        messagingSenderId: "510052458544"
+    };
+    firebase.initializeApp(config);
+</script>
+<script src="script.js"></script>
+</body>
+</html>
